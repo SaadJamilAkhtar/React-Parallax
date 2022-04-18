@@ -2,13 +2,15 @@ import moon from './moon.png'
 import cat from './cat.gif'
 import land from './land.png'
 import './App.css'
-import {Parallax, ParallaxLayer} from "react-spring/addons";
+import {Parallax} from "react-spring/addons";
+import {ParallaxLayer} from "react-spring/addons";
 
 function App() {
     return (
         <div className={'Main'}>
             <Parallax pages={3}>
                 <ParallaxLayer
+                    offset={0}
                     speed={1}
                     factor={2}
                     style={{
@@ -16,8 +18,8 @@ function App() {
                         backgroundSize: 'cover',
                         backgroundPosition: '-8rem, 0rem'
                     }}
-                >
-                </ParallaxLayer>
+                />
+
                 <ParallaxLayer
                     offset={1}
                     speed={1}
@@ -26,8 +28,7 @@ function App() {
                         backgroundImage: `url(${land})`,
                         backgroundSize: 'cover'
                     }}
-                >
-                </ParallaxLayer>
+                />
 
                 <ParallaxLayer
                     offset={0.2}
@@ -38,7 +39,7 @@ function App() {
                     </div>
                 </ParallaxLayer>
                 <ParallaxLayer
-                    offset={2.0}
+                    offset={2}
                     speed={2}
                 >
                     <div className="centerContent">
@@ -46,6 +47,15 @@ function App() {
                     </div>
                 </ParallaxLayer>
 
+                {/*<ParallaxLayer*/}
+                {/*    sticky={{*/}
+                {/*        start: 0.8, end: 2.2*/}
+                {/*    }}*/}
+                {/*>*/}
+                {/*    <div className="centerContent">*/}
+                {/*        <img src={cat} alt=""/>*/}
+                {/*    </div>*/}
+                {/*</ParallaxLayer>*/}
             </Parallax>
         </div>
     );
