@@ -39,7 +39,7 @@ function App() {
                     </div>
                 </ParallaxLayer>
                 <ParallaxLayer
-                    offset={2}
+                    offset={2.2}
                     speed={2}
                 >
                     <div className="centerContent">
@@ -47,15 +47,15 @@ function App() {
                     </div>
                 </ParallaxLayer>
 
-                {/*<ParallaxLayer*/}
-                {/*    sticky={{*/}
-                {/*        start: 0.8, end: 2.2*/}
-                {/*    }}*/}
-                {/*>*/}
-                {/*    <div className="centerContent">*/}
-                {/*        <img src={cat} alt=""/>*/}
-                {/*    </div>*/}
-                {/*</ParallaxLayer>*/}
+                <ParallaxLayer
+                    offset={0.3}
+                    factor={2}
+                    speed={-0.5}
+                >
+                    <div className="centerContent">
+                        <img src={cat} alt=""/>
+                    </div>
+                </ParallaxLayer>
             </Parallax>
         </div>
     );
