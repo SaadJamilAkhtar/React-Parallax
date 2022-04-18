@@ -2,6 +2,10 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    background: black;
+    color: white;
+    -webkit-text-stroke: 3px black;
 }
 
 h2 {
