@@ -17,3 +17,6 @@ ___
 ### Gif
 ![IMG](https://github.com/SaadJamilAkhtar/Project-Images/blob/master/react-parallax-4.gif?raw=true)
 
+## Note
+Same project in react-spring v9.4.4 is [here](https://github.com/SaadJamilAkhtar/React-Parallax-2)
+
